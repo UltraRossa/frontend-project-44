@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import isEven from '../src/isEven.js';
+import manage from '../src/index.js';
 
-isEven();
+const gameName = 'brain-even';
+manage(gameName);

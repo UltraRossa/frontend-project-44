@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import calc from '../src/calc.js';
+import manage from '../src/index.js';
 
-calc();
+const gameName = 'brain-calc';
+manage(gameName);

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import greetings from '../src/cli.js';
+import manage from '../src/index.js';
 
-greetings();
+const gameName = 'brain-games';
+manage(gameName);
