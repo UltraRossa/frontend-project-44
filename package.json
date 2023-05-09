@@ -4,9 +4,9 @@
   "type": "module",
   "description": "[![Actions Status](https://github.com/UltraRossa/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/UltraRossa/frontend-project-44/actions)",
   "bin": {
-    "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js",
-    "brain-calc": "bin/brain-calc.js"
+    "brain-games": "games/bin/brain-games.js",
+    "brain-even": "games/bin/brain-even.js",
+    "brain-calc": "games/bin/brain-calc.js"
   },
   "main": "index.js",
   "scripts": {
