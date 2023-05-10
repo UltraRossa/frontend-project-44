@@ -3,6 +3,7 @@ import isEven from './isEven.js';
 import calc from './calc.js';
 import bcd from './bcd.js';
 import progression from './progression.js';
+import isPrime from './isPrime.js';
 
 const manage = (gameName) => {
   const userName = greetings();
@@ -27,6 +28,10 @@ const manage = (gameName) => {
     case 'brain-progression':
       currentGame = progression;
       console.log('What number is missing in the progression?');
+      break;
+    case 'brain-prime':
+      currentGame = isPrime;
+      console.log('Answer "yes" if given number is prime. Otherwise answer "no".?');
       break;
     default:
   }
