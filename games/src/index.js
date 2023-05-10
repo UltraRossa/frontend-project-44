@@ -2,6 +2,7 @@ import greetings from './cli.js';
 import isEven from './isEven.js';
 import calc from './calc.js';
 import bcd from './bcd.js';
+import progression from './progression.js';
 
 const manage = (gameName) => {
   const userName = greetings();
@@ -22,6 +23,10 @@ const manage = (gameName) => {
     case 'brain-bcd':
       currentGame = bcd;
       console.log('Find the greatest common divisor of given numbers.');
+      break;
+    case 'brain-progression':
+      currentGame = progression;
+      console.log('What number is missing in the progression?');
       break;
     default:
   }

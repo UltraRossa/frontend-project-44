@@ -19,3 +19,7 @@ brain-calc:
 brain-bcd:
 	node games/bin/brain-bcd.js
 
+brain-bcd:
+	node games/bin/brain-progression.js
+
+
