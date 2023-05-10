@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 const checkAnswer = (question, correctAnswer, userName) => {
   console.log(`Question: ${question}`);
   const userAnswer = readlineSync.question('Your answer: ');
-  if (userAnswer === correctAnswer) {
+  if (userAnswer === String(correctAnswer)) {
     console.log('Correct!');
     return true;
   }
