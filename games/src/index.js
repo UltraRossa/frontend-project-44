@@ -1,7 +1,7 @@
 import greetings from './cli.js';
 import isEven from './isEven.js';
 import calc from './calc.js';
-import bcd from './bcd.js';
+import gcd from './gcd.js';
 import progression from './progression.js';
 import isPrime from './isPrime.js';
 
@@ -22,7 +22,7 @@ const manage = (gameName) => {
       console.log('What is the result of the expression?');
       break;
     case 'brain-bcd':
-      currentGame = bcd;
+      currentGame = gcd;
       console.log('Find the greatest common divisor of given numbers.');
       break;
     case 'brain-progression':
