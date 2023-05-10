@@ -1,6 +1,6 @@
 import checkAnswer from './checkAnswer.js';
 
-const bcd = (userName) => {
+const gcd = (userName) => {
   const firstNumber = Math.floor(Math.random() * 100) + 1;
   const secondNumber = Math.floor(Math.random() * 100) + 1;
   const question = `${firstNumber} ${secondNumber}`;
@@ -18,4 +18,4 @@ const bcd = (userName) => {
   return checkAnswer(question, correctAnswer, userName);
 };
 
-export default bcd;
+export default gcd;
