@@ -12,11 +12,11 @@ const calc = (userName) => {
   const question = `${firstNumber} ${operator} ${secondNumber}`;
 
   if (operator === '+') {
-    correctAnswer = String(firstNumber + secondNumber);
+    correctAnswer = firstNumber + secondNumber;
   } else if (operator === '-') {
-    correctAnswer = String(firstNumber - secondNumber);
+    correctAnswer = firstNumber - secondNumber;
   } else {
-    correctAnswer = String(firstNumber * secondNumber);
+    correctAnswer = firstNumber * secondNumber;
   }
 
   return checkAnswer(question, correctAnswer, userName);
