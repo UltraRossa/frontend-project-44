@@ -15,7 +15,7 @@ const manage = (gameName) => {
       return;
     case 'brain-even':
       currentGame = isEven;
-      console.log("Answer 'yes' if given number is even. Otherwise answer 'no'.");
+      console.log('Answer "yes" if the number is even, otherwise answer "no"');
       break;
     case 'brain-calc':
       currentGame = calc;
