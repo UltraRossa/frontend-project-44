@@ -21,7 +21,7 @@ const manage = (gameName) => {
       currentGame = calc;
       console.log('What is the result of the expression?');
       break;
-    case 'brain-bcd':
+    case 'brain-gcd':
       currentGame = gcd;
       console.log('Find the greatest common divisor of given numbers.');
       break;
