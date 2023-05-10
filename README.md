@@ -6,3 +6,4 @@ The example of brain-even game: https://asciinema.org/a/dBsuVUb5k0LBKO2WcF6WPLCL
 The example of brain-calc game: https://asciinema.org/a/ccs861kxbVSnZEmnxtSKqqiyo
 The example of brain-bcd game: https://asciinema.org/a/kp7s37lrWu5LW91OclhkHw9pu
 The example of brain-progression game: https://asciinema.org/a/WCL8xy8bj4qxXlldQZPMZDtlq
+The example of brain-progression game: https://asciinema.org/a/DUTsZCOUTs3HgugOG5IbD8pXG
