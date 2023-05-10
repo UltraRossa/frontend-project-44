@@ -1,7 +1,7 @@
 import greetings from './cli.js';
 import isEven from './isEven.js';
 import calc from './calc.js';
-// import isEven from './isEven.js';
+import bcd from './bcd.js';
 
 const manage = (gameName) => {
   const userName = greetings();
@@ -18,6 +18,10 @@ const manage = (gameName) => {
     case 'brain-calc':
       currentGame = calc;
       console.log('What is the result of the expression?');
+      break;
+    case 'brain-bcd':
+      currentGame = bcd;
+      console.log('Find the greatest common divisor of given numbers.');
       break;
     default:
   }
