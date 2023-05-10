@@ -4,3 +4,4 @@
 
 The example of brain-even game: https://asciinema.org/a/dBsuVUb5k0LBKO2WcF6WPLCLC
 The example of brain-calc game: https://asciinema.org/a/ccs861kxbVSnZEmnxtSKqqiyo
+The example of brain-calc game: https://asciinema.org/a/kp7s37lrWu5LW91OclhkHw9pu
