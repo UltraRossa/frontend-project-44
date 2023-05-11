@@ -22,13 +22,20 @@ The games are:
     + *In this game you need to find the missing number of the progression. I can poudly say that this game is the only one I passed myself without any help. If I did it You'll certainly do it! Good luck!*
 
 ## Quick start
-   
 
+## Demonstrations
+### brain-even: 
+[![asciicast](https://asciinema.org/a/dBsuVUb5k0LBKO2WcF6WPLCLC.svg)](https://asciinema.org/a/dBsuVUb5k0LBKO2WcF6WPLCLC)
 
+### brain-calc: 
+[![asciicast](https://asciinema.org/a/ccs861kxbVSnZEmnxtSKqqiyo.svg)](https://asciinema.org/a/ccs861kxbVSnZEmnxtSKqqiyo)
 
-The example of brain-even game: https://asciinema.org/a/dBsuVUb5k0LBKO2WcF6WPLCLC\n
-The example of brain-calc game: https://asciinema.org/a/ccs861kxbVSnZEmnxtSKqqiyo\n
-The example of brain-bcd game: 
+### brain-gdc: 
 [![asciicast](https://asciinema.org/a/9LL0MmSlLplSnh3fankQNH4i8.svg)](https://asciinema.org/a/9LL0MmSlLplSnh3fankQNH4i8)
-The example of brain-progression game: https://asciinema.org/a/WCL8xy8bj4qxXlldQZPMZDtlq\n
-The example of brain-prime game: https://asciinema.org/a/DUTsZCOUTs3HgugOG5IbD8pXG\n
+
+### brain-prime: 
+[![asciicast](https://asciinema.org/a/DUTsZCOUTs3HgugOG5IbD8pXG.svg)](https://asciinema.org/a/DUTsZCOUTs3HgugOG5IbD8pXG)
+
+### brain-progression: 
+[![asciicast](https://asciinema.org/a/WCL8xy8bj4qxXlldQZPMZDtlq.svg)](https://asciinema.org/a/WCL8xy8bj4qxXlldQZPMZDtlq)
+
