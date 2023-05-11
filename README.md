@@ -4,6 +4,7 @@
 
 The example of brain-even game: https://asciinema.org/a/dBsuVUb5k0LBKO2WcF6WPLCLC\n
 The example of brain-calc game: https://asciinema.org/a/ccs861kxbVSnZEmnxtSKqqiyo\n
-The example of brain-bcd game: <script async id="asciicast-9LL0MmSlLplSnh3fankQNH4i8" src="https://asciinema.org/a/9LL0MmSlLplSnh3fankQNH4i8.js"></script>
+The example of brain-bcd game: 
+<script async id="asciicast-9LL0MmSlLplSnh3fankQNH4i8" src="https://asciinema.org/a/9LL0MmSlLplSnh3fankQNH4i8.js"></script>
 The example of brain-progression game: https://asciinema.org/a/WCL8xy8bj4qxXlldQZPMZDtlq\n
 The example of brain-progression game: https://asciinema.org/a/DUTsZCOUTs3HgugOG5IbD8pXG\n
