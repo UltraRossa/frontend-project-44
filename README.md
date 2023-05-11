@@ -28,10 +28,15 @@ The games are:
     ```bash
     make install
     ```
-3. Do:
+3. To install games globally:
     ```bash
     npm link
     ```
+***If you don't want to install package globally, you need to run every game with command `make`.***
+```bash
+make brain-even
+```
+
 4. Choose the game you want to play.
 
 To play brain-even game:
