@@ -24,7 +24,8 @@ The games are:
 ## Quick start
 
 1. Clone the repository.
-2. Do:
+2. Go to the directory of the repository.
+3. Do:
     ```bash
     make install
     ```
