@@ -23,12 +23,16 @@ The games are:
 
 ## Quick start
 
-1. Clone the repository
+1. Clone the repository.
 2. Do:
     ```bash
     make install
     ```
-3. Choose the game you want to play.
+3. Do:
+    ```bash
+    npm link
+    ```
+4. Choose the game you want to play.
 
 To play brain-even game:
 
