@@ -23,6 +23,43 @@ The games are:
 
 ## Quick start
 
+1. Clone the repository
+2. Do:
+    ```bash
+    make install
+    ```
+3. Choose the game you want to play.
+
+To play brain-even game:
+
+```bash
+brain-even
+```
+
+To play brain-calc game:
+
+```bash
+brain-calc
+```
+
+To play brain-gcd game:
+
+```bash
+brain-gcd
+```
+
+To play brain-prime game:
+
+```bash
+brain-prime
+```
+
+To play brain-progression game:
+
+```bash
+brain-progression
+```
+
 ## Demonstrations
 ### brain-even: 
 [![asciicast](https://asciinema.org/a/dBsuVUb5k0LBKO2WcF6WPLCLC.svg)](https://asciinema.org/a/dBsuVUb5k0LBKO2WcF6WPLCLC)
