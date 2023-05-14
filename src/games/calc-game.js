@@ -1,6 +1,4 @@
-import checkAnswer from './checkAnswer.js';
-
-const calc = (userName) => {
+const calcGame = () => {
   const operators = ['+', '-', '*'];
   const max = 2;
   const min = 0;
@@ -19,7 +17,7 @@ const calc = (userName) => {
     correctAnswer = firstNumber * secondNumber;
   }
 
-  return checkAnswer(question, correctAnswer, userName);
+  return [question, correctAnswer];
 };
 
-export default calc;
+export default calcGame;

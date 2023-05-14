@@ -1,6 +1,4 @@
-import checkAnswer from './checkAnswer.js';
-
-const progression = (userName) => {
+const progressionGame = () => {
   const minLength = 5;
   const maxLength = 10;
   const progressionLength = Math.floor(Math.random() * (maxLength - minLength)) + minLength;
@@ -20,7 +18,7 @@ const progression = (userName) => {
   progressionNumbers[replacedIndex] = '..';
   const question = progressionNumbers.join(' ');
 
-  return checkAnswer(question, correctAnswer, userName);
+  return [question, correctAnswer];
 };
 
-export default progression;
+export default progressionGame;
