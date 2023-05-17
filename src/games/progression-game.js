@@ -2,12 +2,12 @@ import randomNumber from '../utils.js';
 
 const getProgression = (progressionLength, addingValue) => {
   const progressionNumbers = [];
-  const minProgLengthNumber = 0;
-  const maxProgLengthNumber = 10;
+  const minProgStartNumber = 0;
+  const maxProgStartNumber = 10;
 
   for (let i = 0; i < progressionLength; i += 1) {
     if (i === 0) {
-      progressionNumbers[i] = randomNumber(minProgLengthNumber, maxProgLengthNumber);
+      progressionNumbers[i] = randomNumber(minProgStartNumber, maxProgStartNumber);
     } else {
       progressionNumbers[i] = progressionNumbers[i - 1] + addingValue;
     }
