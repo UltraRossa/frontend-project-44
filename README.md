@@ -11,7 +11,7 @@ brain-games consis of five different games. The start of every game begins from 
 The games are:
 
 * **brain-even**
-    + *Decide if the given number is odd or even. Make sure that you know words 'odd' and 'even' or just answer at random, I'm sure you're lucky enough to pass the game successefully*
+    + *Decide if the given number is odd or even. Make sure that you know words 'odd' and 'even' or just answer at random, I'm sure you're lucky enough to pass the game successefully.*
 * **brain-calc**
     + *Have you ever dreamed to be a calculator? No?! You have a great opportunity to know what it's to be! Add, substract or multiply given numbers!*
 * **brain-gcd**
