@@ -1,18 +1,29 @@
-const progressionGame = () => {
-  const minLength = 5;
-  const maxLength = 10;
-  const progressionLength = Math.floor(Math.random() * (maxLength - minLength)) + minLength;
-  const plus = Math.floor((Math.random() * 10) + 1);
+import randomNumber from '../utils.js';
+
+const getProgression = (progressionLength, addingValue) => {
   const progressionNumbers = [];
-  const replacedIndex = Math.floor(Math.random() * progressionLength);
+  const minProgLengthNumber = 0;
+  const maxProgLengthNumber = 10;
 
   for (let i = 0; i < progressionLength; i += 1) {
     if (i === 0) {
-      progressionNumbers[i] = (Math.floor(Math.random() * 10));
+      progressionNumbers[i] = randomNumber(minProgLengthNumber, maxProgLengthNumber);
     } else {
-      progressionNumbers[i] = progressionNumbers[i - 1] + plus;
+      progressionNumbers[i] = progressionNumbers[i - 1] + addingValue;
     }
   }
+  return progressionNumbers;
+};
+
+const progressionGame = () => {
+  const minProgressionLength = 5;
+  const maxProgressionLength = 10;
+  const minAddingValue = 1;
+  const maxAddingValue = 10;
+  const progressionLength = randomNumber(minProgressionLength, maxProgressionLength);
+  const addingValue = randomNumber(minAddingValue, maxAddingValue);
+  const replacedIndex = Math.floor(Math.random() * progressionLength);
+  const progressionNumbers = getProgression(progressionLength, addingValue);
 
   const correctAnswer = progressionNumbers[replacedIndex];
   progressionNumbers[replacedIndex] = '..';

@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import manage from '../src/games/index.js';
+import greetings from '../src/cli.js';
 
-const description = '';
-manage(description);
+greetings();

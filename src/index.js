@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
-import greetings from './cli.js';
 
 const manage = (description, gameFunction) => {
-  const userName = greetings();
   const numberOfRounds = 3;
-  if (description === '') return;
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
 
   console.log(description);
   for (let i = 0; i < numberOfRounds; i += 1) {

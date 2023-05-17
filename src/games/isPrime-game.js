@@ -1,16 +1,20 @@
-const isPrimeGame = () => {
-  const min = 2;
-  const max = 100;
-  const question = Math.floor((Math.random() * (max - min + 1) + min));
-  let correctAnswer;
+import randomNumber from '../utils.js';
 
+const isPrime = (question) => {
   for (let i = 2; i <= question / 2; i += 1) {
     if (question % i === 0) {
-      correctAnswer = 'no';
-      return [question, correctAnswer];
+      return false;
     }
   }
-  correctAnswer = 'yes';
+  return true;
+};
+
+const isPrimeGame = () => {
+  const minNumberOfRange = 2;
+  const maxNumberOfRange = 100;
+  const question = randomNumber(minNumberOfRange, maxNumberOfRange);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
+
   return [question, correctAnswer];
 };
 
