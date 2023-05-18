@@ -16,14 +16,9 @@ const calcCorrectAnswer = (firstNumber, secondNumber, operator) => {
 
 const calcGame = () => {
   const operators = ['+', '-', '*'];
-  const maxOperatorIndex = 2;
-  const minOperatorIndex = 0;
-  const minNumberOfRange = 0;
-  const maxNumberOfRange = 100;
-
-  const firstNumber = randomNumber(minNumberOfRange, maxNumberOfRange);
-  const secondNumber = randomNumber(minNumberOfRange, maxNumberOfRange);
-  const operator = operators[randomNumber(minOperatorIndex, maxOperatorIndex)];
+  const firstNumber = randomNumber(0, 100);
+  const secondNumber = randomNumber(0, 100);
+  const operator = operators[randomNumber(0, 2)];
   const question = `${firstNumber} ${operator} ${secondNumber}`;
   const correctAnswer = calcCorrectAnswer(firstNumber, secondNumber, operator);
 

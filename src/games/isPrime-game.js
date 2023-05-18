@@ -10,9 +10,7 @@ const isPrime = (question) => {
 };
 
 const isPrimeGame = () => {
-  const minNumberOfRange = 2;
-  const maxNumberOfRange = 100;
-  const question = randomNumber(minNumberOfRange, maxNumberOfRange);
+  const question = randomNumber(2, 100);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
   return [question, correctAnswer];

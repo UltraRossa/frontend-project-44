@@ -1,13 +1,11 @@
 import randomNumber from '../utils.js';
 
-const getProgression = (progressionLength, addingValue) => {
+const getProgression = (progStartNumber, progressionLength, addingValue) => {
   const progressionNumbers = [];
-  const minProgStartNumber = 0;
-  const maxProgStartNumber = 10;
 
   for (let i = 0; i < progressionLength; i += 1) {
     if (i === 0) {
-      progressionNumbers[i] = randomNumber(minProgStartNumber, maxProgStartNumber);
+      progressionNumbers[i] = progStartNumber;
     } else {
       progressionNumbers[i] = progressionNumbers[i - 1] + addingValue;
     }
@@ -16,14 +14,11 @@ const getProgression = (progressionLength, addingValue) => {
 };
 
 const progressionGame = () => {
-  const minProgressionLength = 5;
-  const maxProgressionLength = 10;
-  const minAddingValue = 1;
-  const maxAddingValue = 10;
-  const progressionLength = randomNumber(minProgressionLength, maxProgressionLength);
-  const addingValue = randomNumber(minAddingValue, maxAddingValue);
+  const progressionLength = randomNumber(5, 10);
+  const addingValue = randomNumber(1, 10);
   const replacedIndex = Math.floor(Math.random() * progressionLength);
-  const progressionNumbers = getProgression(progressionLength, addingValue);
+  const progStartNumber = randomNumber(0, 10);
+  const progressionNumbers = getProgression(progStartNumber, progressionLength, addingValue);
 
   const correctAnswer = progressionNumbers[replacedIndex];
   progressionNumbers[replacedIndex] = '..';

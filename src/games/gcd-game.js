@@ -13,10 +13,8 @@ const getGcd = (bigger, lesser) => {
 };
 
 const gcdGame = () => {
-  const minNumberOfRange = 0;
-  const maxNumberOfRange = 100;
-  const firstNumber = randomNumber(minNumberOfRange, maxNumberOfRange);
-  const secondNumber = randomNumber(minNumberOfRange, maxNumberOfRange);
+  const firstNumber = randomNumber(0, 100);
+  const secondNumber = randomNumber(0, 100);
   const question = `${firstNumber} ${secondNumber}`;
   const biggerNumber = Math.max(firstNumber, secondNumber);
   const lesserNumber = Math.min(firstNumber, secondNumber);
