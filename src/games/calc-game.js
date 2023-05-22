@@ -3,12 +3,18 @@ import randomNumber from '../utils.js';
 const calcCorrectAnswer = (firstNumber, secondNumber, operator) => {
   let correctAnswer;
 
-  if (operator === '+') {
-    correctAnswer = firstNumber + secondNumber;
-  } else if (operator === '-') {
-    correctAnswer = firstNumber - secondNumber;
-  } else {
-    correctAnswer = firstNumber * secondNumber;
+  switch (operator) {
+    case '+':
+      correctAnswer = firstNumber + secondNumber;
+      break;
+    case '-':
+      correctAnswer = firstNumber - secondNumber;
+      break;
+    case '*':
+      correctAnswer = firstNumber * secondNumber;
+      break;
+    default:
+      throw new Error(`Unknown order state: '${operator}'!`);
   }
 
   return correctAnswer;
@@ -20,7 +26,7 @@ const calcGame = () => {
   const secondNumber = randomNumber(0, 100);
   const operator = operators[randomNumber(0, 2)];
   const question = `${firstNumber} ${operator} ${secondNumber}`;
-  const correctAnswer = calcCorrectAnswer(firstNumber, secondNumber, operator);
+  const correctAnswer = String(calcCorrectAnswer(firstNumber, secondNumber, operator));
 
   return [question, correctAnswer];
 };

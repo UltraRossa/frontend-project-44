@@ -5,13 +5,13 @@ const manage = (description, gameFunction) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-
   console.log(description);
+
   for (let i = 0; i < numberOfRounds; i += 1) {
     const [question, correctAnswer] = gameFunction();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer === String(correctAnswer)) {
+    if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);

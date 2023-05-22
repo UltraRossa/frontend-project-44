@@ -18,7 +18,7 @@ const gcdGame = () => {
   const question = `${firstNumber} ${secondNumber}`;
   const biggerNumber = Math.max(firstNumber, secondNumber);
   const lesserNumber = Math.min(firstNumber, secondNumber);
-  const correctAnswer = getGcd(biggerNumber, lesserNumber);
+  const correctAnswer = String(getGcd(biggerNumber, lesserNumber));
 
   return [question, correctAnswer];
 };
