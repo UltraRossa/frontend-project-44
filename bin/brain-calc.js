@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-import manage from '../src/index.js';
-import calcGame from '../src/games/calc-game.js';
+import runGame from '../src/index.js';
+import genCalcGameData from '../src/games/calc-game.js';
 
-const description = 'What is the result of the expression?';
-manage(description, calcGame);
+runGame('What is the result of the expression?', genCalcGameData);

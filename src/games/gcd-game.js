@@ -1,4 +1,4 @@
-import randomNumber from '../utils.js';
+import getRandomNumber from '../utils.js';
 
 const getGcd = (bigger, lesser) => {
   let biggerNumber = bigger;
@@ -12,9 +12,9 @@ const getGcd = (bigger, lesser) => {
   return lesserNumber;
 };
 
-const gcdGame = () => {
-  const firstNumber = randomNumber(0, 100);
-  const secondNumber = randomNumber(0, 100);
+const genGcdGameData = () => {
+  const firstNumber = getRandomNumber(0, 100);
+  const secondNumber = getRandomNumber(0, 100);
   const question = `${firstNumber} ${secondNumber}`;
   const biggerNumber = Math.max(firstNumber, secondNumber);
   const lesserNumber = Math.min(firstNumber, secondNumber);
@@ -23,4 +23,4 @@ const gcdGame = () => {
   return [question, correctAnswer];
 };
 
-export default gcdGame;
+export default genGcdGameData;
