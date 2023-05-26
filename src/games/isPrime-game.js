@@ -1,5 +1,7 @@
 import getRandomNumber from '../utils.js';
 
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 const isPrime = (question) => {
   for (let i = 2; i <= question / 2; i += 1) {
     if (question % i === 0) {
@@ -16,4 +18,6 @@ const genIsPrimeGameData = () => {
   return [question, correctAnswer];
 };
 
-export default genIsPrimeGameData;
+const startIsPrimeGame = () => ({ generateRound: genIsPrimeGameData, description });
+
+export default startIsPrimeGame;

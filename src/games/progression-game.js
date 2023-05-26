@@ -1,5 +1,7 @@
 import getRandomNumber from '../utils.js';
 
+const description = 'What number is missing in the progression?';
+
 const getProgression = (progressionStartNumber, progressionLength, addingValue) => {
   const progressionNumbers = [];
 
@@ -27,4 +29,6 @@ const genProgressionGameData = () => {
   return [question, correctAnswer];
 };
 
-export default genProgressionGameData;
+const startProgressionGame = () => ({ generateRound: genProgressionGameData, description });
+
+export default startProgressionGame;

@@ -1,5 +1,7 @@
 import getRandomNumber from '../utils.js';
 
+const description = 'What is the result of the expression?';
+
 const calcCorrectAnswer = (firstNumber, secondNumber, operator) => {
   switch (operator) {
     case '+':
@@ -24,4 +26,6 @@ const genCalcGameData = () => {
   return [question, correctAnswer];
 };
 
-export default genCalcGameData;
+const startCalcGame = () => ({ generateRound: genCalcGameData, description });
+
+export default startCalcGame;

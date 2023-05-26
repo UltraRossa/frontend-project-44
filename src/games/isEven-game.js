@@ -1,5 +1,7 @@
 import getRandomNumber from '../utils.js';
 
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 const isEven = (question) => question % 2 === 0;
 
 const genIsEvenGameData = () => {
@@ -8,4 +10,6 @@ const genIsEvenGameData = () => {
   return [question, correctAnswer];
 };
 
-export default genIsEvenGameData;
+const startIsEvenGame = () => ({ generateRound: genIsEvenGameData, description });
+
+export default startIsEvenGame;
