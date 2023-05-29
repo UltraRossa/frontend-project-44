@@ -4,13 +4,11 @@ const description = 'What number is missing in the progression?';
 
 const getProgression = (progressionStartNumber, progressionLength, addingValue) => {
   const progressionNumbers = [];
+  let currentNumber = progressionStartNumber;
 
   for (let i = 0; i < progressionLength; i += 1) {
-    if (i === 0) {
-      progressionNumbers[i] = progressionStartNumber;
-    } else {
-      progressionNumbers[i] = progressionNumbers[i - 1] + addingValue;
-    }
+    progressionNumbers.push(currentNumber);
+    currentNumber += addingValue;
   }
 
   return progressionNumbers;

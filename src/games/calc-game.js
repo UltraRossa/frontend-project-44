@@ -1,6 +1,8 @@
 import getRandomNumber from '../utils.js';
 
 const description = 'What is the result of the expression?';
+const operators = ['+', '-', '*'];
+const numberOfOperators = operators.length - 1;
 
 const calcCorrectAnswer = (firstNumber, secondNumber, operator) => {
   switch (operator) {
@@ -16,10 +18,9 @@ const calcCorrectAnswer = (firstNumber, secondNumber, operator) => {
 };
 
 const genCalcGameData = () => {
-  const operators = ['+', '-', '*'];
   const firstNumber = getRandomNumber(0, 100);
   const secondNumber = getRandomNumber(0, 100);
-  const operator = operators[getRandomNumber(0, 2)];
+  const operator = operators[getRandomNumber(0, numberOfOperators)];
   const question = `${firstNumber} ${operator} ${secondNumber}`;
   const correctAnswer = String(calcCorrectAnswer(firstNumber, secondNumber, operator));
 

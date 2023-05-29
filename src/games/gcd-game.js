@@ -2,17 +2,7 @@ import getRandomNumber from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const getGcd = (bigger, lesser) => {
-  let biggerNumber = bigger;
-  let lesserNumber = lesser;
-
-  while (biggerNumber % lesserNumber !== 0) {
-    const remainder = biggerNumber % lesserNumber;
-    biggerNumber = lesserNumber;
-    lesserNumber = remainder;
-  }
-  return lesserNumber;
-};
+const getGcd = (a, b) => (b === 0 ? a : getGcd(b, a % b));
 
 const genGcdGameData = () => {
   const firstNumber = getRandomNumber(0, 100);
