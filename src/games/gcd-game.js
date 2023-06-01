@@ -8,9 +8,7 @@ const genGcdGameData = () => {
   const firstNumber = getRandomNumber(0, 100);
   const secondNumber = getRandomNumber(0, 100);
   const question = `${firstNumber} ${secondNumber}`;
-  const biggerNumber = Math.max(firstNumber, secondNumber);
-  const lesserNumber = Math.min(firstNumber, secondNumber);
-  const correctAnswer = String(getGcd(biggerNumber, lesserNumber));
+  const correctAnswer = String(getGcd(firstNumber, secondNumber));
 
   return [question, correctAnswer];
 };
