@@ -6,7 +6,7 @@ Five small mathematical games for terminal to play. If you're above 12 and know 
 
 ## About
 
-brain-games consis of five different games. The start of every game begins from greeting. Type your name to be greeted warmly! During the each game you'll be asked for some question to solve. The main goal of the game and possible answers are texted after the greeting. 
+brain-games consist of five different games. The start of every game begins from greeting. Type your name to be greeted warmly! During the each game you'll be asked for some question to solve. The main goal of the game and possible answers are texted after the greeting. 
 
 The games are:
 
